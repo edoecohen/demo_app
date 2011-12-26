@@ -8,6 +8,12 @@ gem 'sqlite3', '1.3.5', :require => 'sqlite3'
 
 # gem 'sqlite3'
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -35,3 +41,4 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
